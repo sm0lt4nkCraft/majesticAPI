@@ -65,3 +65,19 @@ All requests goes via tor proxy.
 :rtype: dict 
 ``` 
 
+### CLI
+```
+  -h, --help            show this help message and exit
+  --basic BASIC         Get basic data about rates, limits and available pairs.
+  --limit LIMIT [LIMIT ...]
+                        Narrow basic infomation. Params: both sequence of
+                        currency symbol and pairs are valid
+  --calc CALC [CALC ...]
+                        Calculate fee. Params: from_symbol from_amount
+                        to_symbol to_amount. Set one amount to zero to make it optional.
+  --order ORDER [ORDER ...]
+                        Place an orer. Params: form_sybmol from_amount to_symbol wallet
+  --status STATUS       Get data about order. Params: order_id
+
+TRX = transction ID.
+```
